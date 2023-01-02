@@ -1,7 +1,7 @@
 FROM python:alpine
 ENV PYTHONUNBUFFERED=1
 COPY ./requirements.txt /requirements.txt
-COPY ./requirements.txt /requirements.dev.txt
+COPY ./requirements.dev.txt /requirements.dev.txt
 WORKDIR /app
 ARG DEV=false
 RUN python -m venv /py && \
